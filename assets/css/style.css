@@ -1,0 +1,156 @@
+/**
+    General
+**/
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+/**
+    Header
+**/
+
+header {
+    background-image: url("../img/background_header.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+div.header-txt-wrap {
+    text-align: center;
+}
+
+div.header-txt-wrap>h1 {
+    font-family: roboto-regular;
+}
+
+div.header-txt-wrap>p {
+    font-family: roboto-light;
+}
+
+
+
+/**
+    Mobile menu 
+**/
+
+nav.topnav {
+    padding: 30px 15% 0px 15%;
+    overflow: hidden;
+    
+}
+
+.topnav a {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-family: roboto-regular;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #fff;
+}
+
+nav.topnav .icon, span.nav-social {
+    display: none;
+    font-size: 25px;
+    color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    nav.topnav {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    img.logo {
+        padding: 25px 25px 7px 25px;
+    }
+
+    .topnav a, span.nav-social {
+        display: none;
+    }
+
+    .topnav a.icon {
+        position: absolute;
+        display: block;
+        top: 15px;
+        right: 5%;
+    }
+
+    .topnav a:not(:last-child) {
+        padding: 25px;
+    }
+
+    .topnav a:first-child {
+        padding: 50px 0 25px 0;
+    }
+
+    div.main-nav-wrap {
+        background-color: #222222;
+        opacity: 0.97;
+        color: #CCCCCC;
+        width: 100%;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: 15px;
+        right: 5%;
+    }
+
+    .topnav.responsive a {
+        font-family: roboto-light;
+        text-align: center;
+        float: none;
+        display: block; 
+    }
+    
+    .topnav.responsive span.nav-social {
+        color: #CCCCCC;
+        font-size: 12px;
+        font-family: roboto-regular;
+        display: block;
+        padding: 25px 0 10px 25px; 
+        letter-spacing: 6px;
+    }
+    span.nav-social>i {
+        font-size: 22px;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+    span.nav-social>i:last-child {
+        position: absolute;
+        right: 60px;
+        bottom: 25px;
+    }
+}
