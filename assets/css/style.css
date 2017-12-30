@@ -5,6 +5,10 @@ html, body {
     height:100%;
 }
 
+body {
+    margin: 0;
+}
+
 @font-face {
     font-family: roboto-regular;
     src: url(../fonts/Roboto-Regular.ttf);
@@ -23,10 +27,6 @@ html, body {
 @font-face {
     font-family: roboto-light;
     src: url(../fonts/Roboto-Light.ttf);
-}
-
-body {
-    margin: 0;
 }
 
 /**
@@ -105,82 +105,8 @@ div.regular-menu {
     right: 5%;
 }
 
-
-@media screen and (max-width: 800px) {
-    nav.topnav {
-        padding: 0;
-        overflow: hidden;
-    }
-
-    img.logo {
-        padding: 25px 25px 7px 25px;
-    }
-
-    .topnav a, span.nav-social {
-        display: none;
-    }
-
-    .topnav a.icon {
-        position: absolute;
-        display: block;
-        top: 6px;
-        right: 1%;
-    }
-
-    .topnav a:not(:last-child) {
-        padding: 25px;
-    }
-
-    .topnav a:first-child {
-        padding: 50px 0 25px 0;
-    }
-
-    div.main-nav-wrap {
-        background-color: #222222;
-        opacity: 0.97;
-        color: #CCCCCC;
-        width: 100%;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        top: 6px;
-        right: 1%;
-    }
-
-    .topnav.responsive a {
-        font-family: roboto-light;
-        text-align: center;
-        float: none;
-        display: block; 
-    }
-    
-    .topnav.responsive span.nav-social {
-        color: #CCCCCC;
-        font-size: 12px;
-        font-family: roboto-regular;
-        display: block;
-        padding: 25px 0 10px 25px; 
-        letter-spacing: 6px;
-    }
-    span.nav-social>i {
-        font-size: 22px;
-        position: absolute;
-        right: 25px;
-        bottom: 25px;
-    }
-    span.nav-social>i:last-child {
-        position: absolute;
-        right: 60px;
-        bottom: 25px;
-    }
-    div.regular-menu {
-        position: inherit;
-    }
+p.header-mobile-p {
+    display: none;
 }
 
 /**
@@ -444,6 +370,7 @@ section#about p {
     Social section
 **/
 
+
 section#social {
     overflow: auto;
 }
@@ -564,4 +491,212 @@ div.bottom-footer div {
 
 div.bottom-footer {
     margin: 0 auto;
+}
+
+div.social-bottom-footer {
+    display: none;
+}
+
+p.p-bottom-footer {
+    display: block;
+}
+
+/**
+    Tablet Query
+**/
+
+@media screen and (max-width: 850px) {
+    nav.topnav {
+        padding: 0;
+        overflow: hidden;
+    }
+    img.logo {
+        padding: 25px 25px 7px 25px;
+    }
+    .topnav a,
+    span.nav-social {
+        display: none;
+    }
+    .topnav a.icon {
+        position: absolute;
+        display: block;
+        top: 6px;
+        right: 1%;
+    }
+    .topnav a:not(:last-child) {
+        padding: 25px;
+    }
+    .topnav a:first-child {
+        padding: 50px 0 25px 0;
+    }
+    div.main-nav-wrap {
+        background-color: #222222;
+        opacity: 0.97;
+        color: #CCCCCC;
+        width: 100%;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: 6px;
+        right: 1%;
+    }
+    .topnav.responsive a {
+        font-family: roboto-light;
+        text-align: center;
+        float: none;
+        display: block;
+    }
+    .topnav.responsive span.nav-social {
+        color: #CCCCCC;
+        font-size: 12px;
+        font-family: roboto-regular;
+        display: block;
+        padding: 25px 0 10px 25px;
+        letter-spacing: 6px;
+    }
+    span.nav-social>i {
+        font-size: 22px;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+    span.nav-social>i:last-child {
+        position: absolute;
+        right: 60px;
+        bottom: 25px;
+    }
+    div.regular-menu {
+        position: inherit;
+    }
+}
+
+/**
+    Mobile Query
+**/
+
+@media screen and (max-width: 650px) {
+    div.header-txt-wrap>h1 {
+        padding: 250px 20px 0 20px;
+    }
+
+    div.header-txt-wrap>p {
+        display: none;
+    }
+
+    p.header-mobile-p {
+        display: block !important;
+        padding: 0 !important;
+    }
+
+    section#services>article.design {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    section#services>article.team {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    section#jobs>article:first-child {
+        padding: 60px 15vw;
+    }
+
+    section#jobs>article.job>button {
+        display: none;
+    }
+
+    div.tag {
+        width: 50px;
+        font-size: 16px;
+        border: 0px;
+        padding: 0px;
+        margin-right: 8px;
+    }
+
+    section#jobs>article.job p, h3  {
+        width: 100% !important;
+    }
+
+    section#jobs>article.job {
+        background: #EDEDED;
+    }
+
+    section#about {
+        background: #FBFBFB;
+    }
+
+    section#jobs>article:nth-child(3) {
+        background-color: #fff;
+        color: black;
+    }
+
+    section#about h2::before {
+        padding: 0 0 30px 0;
+        font-size: 19px;
+    }
+
+    section#about h2 {
+        padding: 0 5vw;
+    }
+
+    section#about p {
+        padding: 0px 18vw;
+    }
+
+    div.social-before::before {
+        font-size: 19px;
+        padding: 50px 0 20px 0;
+    }
+
+    .footer-grid {
+        padding: 80px 0% 80px 6%;
+        display: grid;
+        grid-auto-rows: minmax(180px, 200px);
+    }
+
+    .one {
+        justify-self: left;
+    }
+
+    .two {
+        justify-self: left;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .three {
+        justify-self: left;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    div.social-bottom-footer {
+        display: block;
+    }
+
+    div.social-bottom-footer span {
+        float: right;
+    }
+
+    footer i.fa-twitter,
+    i.fa-linkedin {
+        font-size: 35px;
+        padding: 0 0px 0px 40px;
+    }
+    
+    div.bottom-footer div {
+        display: none;
+    }
+
+    p.p-bottom-footer {
+        display: block;
+    }
+
+    div.bottom-footer p:nth-child(2) {
+        display: none;
+    }
 }
