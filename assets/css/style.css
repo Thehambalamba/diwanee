@@ -47,7 +47,7 @@ div.header-txt-wrap {
 }
 
 div.header-txt-wrap>h1 {
-    padding-top: 250px;
+    padding-top: 150px;
     margin: 0;
     font-family: roboto-regular;
     font-size: 80px;
@@ -60,9 +60,10 @@ div.header-txt-wrap>h1 {
 } */
 
 div.header-txt-wrap>p {
+    margin: 0;
     font-family: roboto-light;
     font-size: 24px;
-    padding: 0 35vw;
+    padding: 0 35vw 50px 35vw;
 }
 
 div.header-txt-wrap>p::before {
@@ -75,7 +76,7 @@ div.header-txt-wrap>p::before {
 /* Menu */
 
 nav.topnav {
-    padding: 30px 15% 0px 15%;
+    padding: 30px 20% 0px 20%;
     overflow: hidden;
     
 }
@@ -100,9 +101,8 @@ nav.topnav .icon, span.nav-social {
 }
 
 div.regular-menu {
-    position: absolute;
-    top: 30px;
-    right: 5%;
+    position: relative;
+    top: -34px;
 }
 
 p.header-mobile-p {
@@ -505,8 +505,10 @@ p.p-bottom-footer {
     Tablet Query
 **/
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
     nav.topnav {
+        position: absolute;
+        width: 100%;
         padding: 0;
         overflow: hidden;
     }
@@ -518,11 +520,11 @@ p.p-bottom-footer {
         display: none;
     }
     .topnav a.icon {
-        position: absolute;
         display: block;
-        top: 6px;
-        right: 1%;
+        position: relative;
+        top: -64px;
     }
+
     .topnav a:not(:last-child) {
         padding: 25px;
     }
@@ -536,7 +538,8 @@ p.p-bottom-footer {
         width: 100%;
     }
     .topnav.responsive {
-        position: relative;
+        position: absolute;
+        width: 100%;
     }
     .topnav.responsive a.icon {
         position: absolute;
@@ -549,6 +552,7 @@ p.p-bottom-footer {
         float: none;
         display: block;
     }
+
     .topnav.responsive span.nav-social {
         color: #CCCCCC;
         font-size: 12px;
@@ -557,6 +561,11 @@ p.p-bottom-footer {
         padding: 25px 0 10px 25px;
         letter-spacing: 6px;
     }
+
+    .topnav.responsive div.main-nav-wrap {
+        height: 395px;
+    }
+
     span.nav-social>i {
         font-size: 22px;
         position: absolute;
@@ -571,6 +580,13 @@ p.p-bottom-footer {
     div.regular-menu {
         position: inherit;
     }
+    div.header-txt-wrap>h1 {
+        padding-top: 150px;
+    }
+    div.header-txt-wrap>p {
+        padding: 0 25vw 50px 25vw;
+        margin: 0;
+    }
 }
 
 /**
@@ -579,7 +595,7 @@ p.p-bottom-footer {
 
 @media screen and (max-width: 650px) {
     div.header-txt-wrap>h1 {
-        padding: 250px 20px 0 20px;
+        padding: 150px 20px 0 20px;
     }
 
     div.header-txt-wrap>p {
@@ -588,7 +604,7 @@ p.p-bottom-footer {
 
     p.header-mobile-p {
         display: block !important;
-        padding: 0 !important;
+        padding: 0 0 50px 0 !important;
     }
 
     section#services>article.design {
@@ -615,6 +631,19 @@ p.p-bottom-footer {
         border: 0px;
         padding: 0px;
         margin-right: 8px;
+    }
+
+    div.tag:hover {
+        color:black;
+        background: transparent;
+    }
+
+    div.tag-hide {
+        display: none;
+    }
+
+    div.tag-big {
+        margin-left: 17px;
     }
 
     section#jobs>article.job p, h3  {
@@ -680,12 +709,13 @@ p.p-bottom-footer {
 
     div.social-bottom-footer span {
         float: right;
+        padding: 10px 40px 0px 0px;
     }
 
     footer i.fa-twitter,
     i.fa-linkedin {
         font-size: 35px;
-        padding: 0 0px 0px 40px;
+        padding: 0px 0px 30px 40px;
     }
     
     div.bottom-footer div {
@@ -699,4 +729,5 @@ p.p-bottom-footer {
     div.bottom-footer p:nth-child(2) {
         display: none;
     }
+
 }
