@@ -1,6 +1,7 @@
 /**
     General
 **/
+
 html, body {
     height:100%;
 }
@@ -10,23 +11,55 @@ body {
 }
 
 @font-face {
-    font-family: roboto-regular;
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
     font-family: roboto-bold;
-    src: url(../fonts/Roboto-Bold.ttf);
-}
+    src: url('../fonts/roboto_bold/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto_bold/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto_bold/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_bold/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto_bold/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto_bold/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-@font-face {
-    font-family: roboto-Medium;
-    src: url(../fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
     font-family: roboto-light;
-    src: url(../fonts/Roboto-Light.ttf);
+    src: url('../fonts/roboto_light/roboto-light-webfont.eot');
+    src: url('../fonts/roboto_light/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto_light/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_light/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto_light/roboto-light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto_light/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: roboto-Medium;
+    src: url('../fonts/roboto_medium/roboto-medium-webfont.eot');
+    src: url('../fonts/roboto_medium/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto_medium/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_medium/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto_medium/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto_medium/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url('../fonts/roboto_regular/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto_regular/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto_regular/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_regular/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto_regular/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto_regular/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /**
@@ -54,12 +87,6 @@ div.header-txt-wrap>h1 {
     font-size: 80px;
 }
 
-/* div.header-txt-wrap>span::after {
-    content: url('../img/after_header.png');
-    display: block;
-    text-align: center;
-} */
-
 div.header-txt-wrap>p {
     margin: 0;
     font-family: roboto-light;
@@ -83,7 +110,6 @@ nav.topnav {
 }
 
 .topnav a {
-    float: right;
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -103,6 +129,7 @@ nav.topnav .icon, span.nav-social {
 
 div.regular-menu {
     position: relative;
+    float: right;
     top: -34px;
 }
 
@@ -146,7 +173,7 @@ article.service:hover {
 }
 
 article.service>h4 {
-    font-family: roboto-bold;
+    font-family: roboto-regular;
     letter-spacing: 3px;
 }
 
@@ -535,6 +562,7 @@ p.p-bottom-footer {
 
     .topnav a:not(:last-child) {
         padding: 25px;
+        float: right;
     }
 
     .topnav a:first-child {
@@ -575,7 +603,7 @@ p.p-bottom-footer {
         font-size: 12px;
         font-family: roboto-regular;
         display: block;
-        padding: 25px 0 10px 25px;
+        padding: 150px 0 10px 25px;
         letter-spacing: 6px;
     }
 
@@ -598,6 +626,7 @@ p.p-bottom-footer {
 
     div.regular-menu {
         position: inherit;
+        float: none;
     }
 
     div.header-txt-wrap>h1 {
@@ -610,6 +639,35 @@ p.p-bottom-footer {
     }
     .topnav a {
         font-size: 25px;
+    }
+    div.nav-social-i {
+        float: right;
+        position: absolute;
+        right: 25px;
+        top: 565px;
+        font-size: 22px;
+    }
+
+    section#jobs>article.job {
+        padding: 60px 10vw;
+    }
+
+    section#jobs>article.job>p {
+        display: block;
+    }
+
+    article.job {
+        position: relative; 
+    }
+
+    section#jobs>article.job>button {
+        position: absolute;
+        top: 110px;
+        right: 10vw;
+    }
+
+    section#jobs>article.job>p {
+        width: 400px;
     }
 }
 
@@ -761,6 +819,20 @@ p.p-bottom-footer {
     div.bottom-footer p:nth-child(2) {
         display: none;
     }
+    .topnav.responsive span.nav-social {
+        padding: 60px 0 0px 25px;
+    }
+    div.nav-social-i {
+        top: 465px;
+    }
+
+    div.header-txt-wrap>h1 {
+        font-size: 65px;
+    }
+
+    article.service {
+        padding: 40px 40px;
+    }
 
 }
 
@@ -768,4 +840,8 @@ p.p-bottom-footer {
     Custom breakpoints 
 */
 
-@media screen and (max-width: 985px) { }
+@media screen and (max-width: 985px) {
+    article.service {
+        padding: 40px 20px;
+    }
+}
