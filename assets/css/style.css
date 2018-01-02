@@ -38,7 +38,8 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    width: 100%;
+    height: 730px;
 }
 
 
@@ -47,7 +48,7 @@ div.header-txt-wrap {
 }
 
 div.header-txt-wrap>h1 {
-    padding-top: 150px;
+    padding-top: 100px;
     margin: 0;
     font-family: roboto-regular;
     font-size: 80px;
@@ -91,7 +92,7 @@ nav.topnav {
 }
 
 .topnav a:hover {
-    color: #fff;
+    color: #cb1237;
 }
 
 nav.topnav .icon, span.nav-social {
@@ -506,19 +507,26 @@ p.p-bottom-footer {
 **/
 
 @media screen and (max-width: 1024px) {
+    header {
+        height: 630px;
+    }
+
     nav.topnav {
         position: absolute;
         width: 100%;
         padding: 0;
         overflow: hidden;
     }
+
     img.logo {
         padding: 25px 25px 7px 25px;
     }
+
     .topnav a,
     span.nav-social {
         display: none;
     }
+
     .topnav a.icon {
         display: block;
         position: relative;
@@ -528,24 +536,33 @@ p.p-bottom-footer {
     .topnav a:not(:last-child) {
         padding: 25px;
     }
+
     .topnav a:first-child {
-        padding: 50px 0 25px 0;
+        padding: 50px 0 50px 0;
     }
+
+    .topnav a {
+        padding: 50px;
+    }
+
     div.main-nav-wrap {
         background-color: #222222;
         opacity: 0.97;
         color: #CCCCCC;
         width: 100%;
     }
+
     .topnav.responsive {
         position: absolute;
         width: 100%;
     }
+
     .topnav.responsive a.icon {
         position: absolute;
         top: 6px;
-        right: 1%;
+        right: 0;
     }
+
     .topnav.responsive a {
         font-family: roboto-light;
         text-align: center;
@@ -563,7 +580,7 @@ p.p-bottom-footer {
     }
 
     .topnav.responsive div.main-nav-wrap {
-        height: 395px;
+        height: 560px;
     }
 
     span.nav-social>i {
@@ -572,20 +589,27 @@ p.p-bottom-footer {
         right: 25px;
         bottom: 25px;
     }
+
     span.nav-social>i:last-child {
         position: absolute;
         right: 60px;
         bottom: 25px;
     }
+
     div.regular-menu {
         position: inherit;
     }
+
     div.header-txt-wrap>h1 {
         padding-top: 150px;
     }
+
     div.header-txt-wrap>p {
         padding: 0 25vw 50px 25vw;
         margin: 0;
+    }
+    .topnav a {
+        font-size: 25px;
     }
 }
 
@@ -594,6 +618,14 @@ p.p-bottom-footer {
 **/
 
 @media screen and (max-width: 650px) {
+    header {
+        height: 530px;
+    }
+
+    .topnav.responsive div.main-nav-wrap {
+        height: 461px;
+    }
+
     div.header-txt-wrap>h1 {
         padding: 150px 20px 0 20px;
     }
@@ -731,3 +763,9 @@ p.p-bottom-footer {
     }
 
 }
+
+/*
+    Custom breakpoints 
+*/
+
+@media screen and (max-width: 985px) { }
