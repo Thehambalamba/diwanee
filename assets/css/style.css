@@ -1,9 +1,8 @@
-/**
-    General
-**/
+/** General **/
 
-html, body {
-    height:100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
@@ -13,58 +12,37 @@ body {
 @font-face {
     font-family: roboto-bold;
     src: url('../fonts/roboto_bold/roboto-bold-webfont.eot');
-    src: url('../fonts/roboto_bold/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto_bold/roboto-bold-webfont.woff2') format('woff2'),
-         url('../fonts/roboto_bold/roboto-bold-webfont.woff') format('woff'),
-         url('../fonts/roboto_bold/roboto-bold-webfont.ttf') format('truetype'),
-         url('../fonts/roboto_bold/roboto-bold-webfont.svg#robotobold') format('svg');
+    src: url('../fonts/roboto_bold/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_bold/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto_bold/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto_bold/roboto-bold-webfont.ttf') format('truetype'), url('../fonts/roboto_bold/roboto-bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: roboto-light;
     src: url('../fonts/roboto_light/roboto-light-webfont.eot');
-    src: url('../fonts/roboto_light/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto_light/roboto-light-webfont.woff2') format('woff2'),
-         url('../fonts/roboto_light/roboto-light-webfont.woff') format('woff'),
-         url('../fonts/roboto_light/roboto-light-webfont.ttf') format('truetype'),
-         url('../fonts/roboto_light/roboto-light-webfont.svg#robotolight') format('svg');
+    src: url('../fonts/roboto_light/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_light/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto_light/roboto-light-webfont.woff') format('woff'), url('../fonts/roboto_light/roboto-light-webfont.ttf') format('truetype'), url('../fonts/roboto_light/roboto-light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: roboto-Medium;
     src: url('../fonts/roboto_medium/roboto-medium-webfont.eot');
-    src: url('../fonts/roboto_medium/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto_medium/roboto-medium-webfont.woff2') format('woff2'),
-         url('../fonts/roboto_medium/roboto-medium-webfont.woff') format('woff'),
-         url('../fonts/roboto_medium/roboto-medium-webfont.ttf') format('truetype'),
-         url('../fonts/roboto_medium/roboto-medium-webfont.svg#robotomedium') format('svg');
+    src: url('../fonts/roboto_medium/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_medium/roboto-medium-webfont.woff2') format('woff2'), url('../fonts/roboto_medium/roboto-medium-webfont.woff') format('woff'), url('../fonts/roboto_medium/roboto-medium-webfont.ttf') format('truetype'), url('../fonts/roboto_medium/roboto-medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: roboto-regular;
     src: url('../fonts/roboto_regular/roboto-regular-webfont.eot');
-    src: url('../fonts/roboto_regular/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/roboto_regular/roboto-regular-webfont.woff2') format('woff2'),
-         url('../fonts/roboto_regular/roboto-regular-webfont.woff') format('woff'),
-         url('../fonts/roboto_regular/roboto-regular-webfont.ttf') format('truetype'),
-         url('../fonts/roboto_regular/roboto-regular-webfont.svg#robotoregular') format('svg');
+    src: url('../fonts/roboto_regular/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto_regular/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto_regular/roboto-regular-webfont.woff') format('woff'), url('../fonts/roboto_regular/roboto-regular-webfont.ttf') format('truetype'), url('../fonts/roboto_regular/roboto-regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-/**
-    Header
-**/
+
+/** Header **/
 
 header {
     background-image: url("../img/background-header.gif");
@@ -74,7 +52,6 @@ header {
     width: 100%;
     height: 730px;
 }
-
 
 div.header-txt-wrap {
     text-align: center;
@@ -101,12 +78,12 @@ div.header-txt-wrap>p::before {
     text-align: center;
 }
 
+
 /* Menu */
 
 nav.topnav {
     padding: 30px 20% 0px 20%;
     overflow: hidden;
-    
 }
 
 .topnav a {
@@ -121,7 +98,8 @@ nav.topnav {
     color: #cb1237;
 }
 
-nav.topnav .icon, span.nav-social {
+nav.topnav .icon,
+span.nav-social {
     display: none;
     font-size: 25px;
     color: black;
@@ -137,9 +115,8 @@ p.header-mobile-p {
     display: none;
 }
 
-/**
-    Services section
-**/
+
+/** Services section **/
 
 section#services {
     background-color: #FBFBFB;
@@ -202,20 +179,21 @@ div#development-sprite {
     width: 125px;
     background-position: 0px 0px;
 }
+
 div#design-sprite {
     height: 100px;
     width: 125px;
     background-position: -110px 0px;
 }
+
 div#team-sprite {
     height: 100px;
     width: 125px;
     background-position: -225px 0px;
 }
 
-/**
-    Jobs section
-**/
+
+/** Jobs section **/
 
 section#jobs {
     overflow: auto;
@@ -356,9 +334,8 @@ button.btn-load:hover {
     color: black;
 }
 
-/**
-    About section
-**/
+
+/** About section **/
 
 section#about {
     overflow: auto;
@@ -394,10 +371,8 @@ section#about p {
     font-size: 18px;
 }
 
-/**
-    Social section
-**/
 
+/** Social section **/
 
 section#social {
     overflow: auto;
@@ -439,9 +414,8 @@ div#facebook-sprite {
     background-position: -75px 0px;
 }
 
-/**
-    Social section
-**/
+
+/** Social section **/
 
 footer {
     overflow: auto;
@@ -471,14 +445,15 @@ footer {
     grid-column: 3;
     grid-row: 1;
 }
-footer h5 { 
+
+footer h5 {
     display: inline-block;
     font-family: roboto-regular;
     font-size: 16px;
     color: #fff;
 }
 
-footer p { 
+footer p {
     font-family: roboto-light;
     margin: 0;
     font-size: 16px;
@@ -491,14 +466,15 @@ footer i.fa-map-marker {
     color: #c41230;
 }
 
-footer i.fa-twitter, i.fa-linkedin {
+footer i.fa-twitter,
+i.fa-linkedin {
     font-size: 25px;
     padding: 0 10px;
 }
 
 div.bottom-footer {
     display: grid;
-grid-column-end: span 3;
+    grid-column-end: span 3;
     background-color: #1E1E1E;
     padding: 0 20%;
 }
@@ -529,75 +505,62 @@ p.p-bottom-footer {
     display: block;
 }
 
-/**
-    Tablet Query
-**/
+
+/** Tablet Query **/
 
 @media screen and (max-width: 1024px) {
     header {
         height: 630px;
     }
-
     nav.topnav {
         position: absolute;
         width: 100%;
         padding: 0;
         overflow: hidden;
     }
-
     img.logo {
         padding: 25px 25px 7px 25px;
     }
-
     .topnav a,
     span.nav-social {
         display: none;
     }
-
     .topnav a.icon {
         display: block;
         position: relative;
         top: -64px;
     }
-
     .topnav a:not(:last-child) {
         padding: 25px;
         float: right;
     }
-
     .topnav a:first-child {
         padding: 50px 0 50px 0;
     }
-
     .topnav a {
         padding: 50px;
     }
-
     div.main-nav-wrap {
         background-color: #222222;
         opacity: 0.97;
         color: #CCCCCC;
         width: 100%;
     }
-
     .topnav.responsive {
         position: absolute;
         width: 100%;
     }
-
     .topnav.responsive a.icon {
         position: absolute;
         top: 6px;
         right: 0;
     }
-
     .topnav.responsive a {
         font-family: roboto-light;
         text-align: center;
         float: none;
         display: block;
     }
-
     .topnav.responsive span.nav-social {
         color: #CCCCCC;
         font-size: 12px;
@@ -606,33 +569,27 @@ p.p-bottom-footer {
         padding: 150px 0 10px 25px;
         letter-spacing: 6px;
     }
-
     .topnav.responsive div.main-nav-wrap {
         height: 560px;
     }
-
     span.nav-social>i {
         font-size: 22px;
         position: absolute;
         right: 25px;
         bottom: 25px;
     }
-
     span.nav-social>i:last-child {
         position: absolute;
         right: 60px;
         bottom: 25px;
     }
-
     div.regular-menu {
         position: inherit;
         float: none;
     }
-
     div.header-txt-wrap>h1 {
         padding-top: 150px;
     }
-
     div.header-txt-wrap>p {
         padding: 0 25vw 50px 25vw;
         margin: 0;
@@ -647,74 +604,59 @@ p.p-bottom-footer {
         top: 565px;
         font-size: 22px;
     }
-
     section#jobs>article.job {
         padding: 60px 10vw;
     }
-
     section#jobs>article.job>p {
         display: block;
     }
-
     article.job {
-        position: relative; 
+        position: relative;
     }
-
     section#jobs>article.job>button {
         position: absolute;
         top: 110px;
         right: 10vw;
     }
-
     section#jobs>article.job>p {
         width: 400px;
     }
 }
 
-/**
-    Mobile Query
-**/
+
+/** Mobile Query **/
 
 @media screen and (max-width: 650px) {
     header {
         height: 530px;
     }
-
     .topnav.responsive div.main-nav-wrap {
         height: 461px;
     }
-
     div.header-txt-wrap>h1 {
         padding: 150px 20px 0 20px;
     }
-
     div.header-txt-wrap>p {
         display: none;
     }
-
     p.header-mobile-p {
         display: block !important;
         padding: 0 0 50px 0 !important;
     }
-
     section#services>article.design {
         grid-column: 1;
         grid-row: 2;
     }
-
     section#services>article.team {
         grid-column: 1;
         grid-row: 3;
     }
-
     section#jobs>article:first-child {
         padding: 60px 15vw;
     }
-
     section#jobs>article.job>button {
         display: none;
     }
-
     div.tag {
         width: 50px;
         font-size: 16px;
@@ -722,100 +664,80 @@ p.p-bottom-footer {
         padding: 0px;
         margin-right: 8px;
     }
-
     div.tag:hover {
-        color:black;
+        color: black;
         background: transparent;
     }
-
     div.tag-hide {
         display: none;
     }
-
     div.tag-big {
         margin-left: 17px;
     }
-
-    section#jobs>article.job p, h3  {
+    section#jobs>article.job p,
+    h3 {
         width: 100% !important;
     }
-
     section#jobs>article.job {
         background: #EDEDED;
     }
-
     section#about {
         background: #FBFBFB;
     }
-
     section#jobs>article:nth-child(3) {
         background-color: #fff;
         color: black;
     }
-
     section#about h2::before {
         padding: 0 0 30px 0;
         font-size: 19px;
     }
-
     section#about h2 {
         padding: 0 5vw;
     }
-
     section#about p {
         padding: 0px 18vw;
     }
-
     div.social-before::before {
         font-size: 19px;
         padding: 50px 0 20px 0;
     }
-
     .footer-grid {
         padding: 80px 0% 80px 6%;
         display: grid;
         grid-auto-rows: minmax(180px, 200px);
     }
-
     .one {
         justify-self: left;
     }
-
     .two {
         justify-self: left;
         grid-column: 1;
         grid-row: 2;
     }
-
     .three {
         justify-self: left;
         grid-column: 1;
         grid-row: 3;
     }
-
     div.social-bottom-footer {
         display: block;
     }
-
     div.social-bottom-footer span {
         float: right;
         padding: 10px 40px 0px 0px;
     }
-
     footer i.fa-twitter,
     i.fa-linkedin {
         font-size: 35px;
         padding: 0px 0px 30px 40px;
     }
-    
     div.bottom-footer div {
         display: none;
     }
-
     p.p-bottom-footer {
         display: block;
     }
-
     div.bottom-footer p:nth-child(2) {
         display: none;
     }
@@ -825,20 +747,16 @@ p.p-bottom-footer {
     div.nav-social-i {
         top: 465px;
     }
-
     div.header-txt-wrap>h1 {
         font-size: 65px;
     }
-
     article.service {
         padding: 40px 40px;
     }
-
 }
 
-/*
-    Custom breakpoints 
-*/
+
+/* Custom breakpoints */
 
 @media screen and (max-width: 985px) {
     article.service {
